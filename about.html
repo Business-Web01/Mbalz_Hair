@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Mbalz_Hair</title>
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+}
+
+.main-header nav {
+  background: pink; 
+  padding: 10px 20px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  color: rgb(255, 246, 248);
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.image-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 8px solid pink;
+  overflow: hidden;
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.text h2 {
+  color: pink;
+  margin-bottom: 15px;
+}
+
+.text p {
+  color: grey;
+  font-size: 1.1rem;
+}
+
+/* Policy Section */
+.policy-area {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-radius: 20px;
+}
+
+.policy-block {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.policy-block h3 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.policy-block img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  filter: grayscale(100%) brightness(0);
+}
+
+.policy-block p {
+  color: black;
+  font-size: 0.95rem;
+}
+
+.policy-block {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.policy-block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.policy-block:hover h3,
+.policy-block:hover p,
+.policy-block:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-circle {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    padding: 0 10px;
+  }
+
+  .policy-area {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+  }
+
+  .policy-block {
+    margin-bottom: 20px;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .main-header nav {
+    text-align: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-content">
+      <div class="image-circle">
+        <img src="About.jpg" alt="Salon Owner" />
+      </div>
+      <div class="text">
+        <h2>About Mbalz_Hair</h2>
+        <p>We are a passionate team of professionals offering top-quality beauty services with care, creativity, and commitment to your satisfaction.</p>
+      </div>
+    </div>
+
+    <!-- POLICY BLOCK -->
+    <div class="policy-area">
+      <div class="policy-block">
+        <h3>Refund Policy</h3>
+        <img src="Refund.svg" alt="Refund" />
+        <p>If you're not satisfied within 24hrs, we offer full or partial refunds based on service terms.</p>
+      </div>
+      <div class="policy-block">
+        <h3>Booking Policy</h3>
+        <img src="Calendar.svg" alt="Booking" />
+        <p>All appointments must be confirmed 24hrs in advance to secure your spot.</p>
+      </div>
+      <div class="policy-block">
+        <h3>Late Policy</h3>
+        <img src="Clock.svg" alt="Late Arrival" />
+        <p>Arrivals later than 15 mins may forfeit their appointment or incur a reschedule fee.</p>
+      </div>
+      <div class="policy-block">
+        <h3>Hygiene Policy</h3>
+        <img src="Hygiene.svg" alt="Hygiene" />
+        <p>We follow strict cleanliness standards to ensure a safe and professional experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  console.log("About Us page loaded");
+});
+
+  </script>
+</body>
+</html>

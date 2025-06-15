@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mbalz_Hair - Home</title>
+ <style>
+    /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: white;
+}
+
+/* Header Styles */
+.main-header nav {
+  background: pink; 
+  padding: 10px 20px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a.active {
+  color: rgb(255, 246, 248);
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Home Section Styles */
+.home-section {
+  background-image: url('background.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.salon-name {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+ </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="home-section">
+    <div class="hero-overlay">
+      <h1 class="salon-name">Mbalz_Hair</h1>
+    </div>
+  </section>
+
+  <script>
+    // Future animations or interactivity can go here
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Home page loaded');
+});
+
+  </script>
+</body>
+</html>
